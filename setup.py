@@ -1,3 +1,3 @@
 from distutils.core import setup
 
-setup(console=['ClientB.py'])
+setup(console=['Client.py'])
