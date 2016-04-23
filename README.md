@@ -1,5 +1,5 @@
 # Younioner
-Younioner is ** multipale client ** reverse shell created by Ayoub Ouakkaha, which is now under development
+Younioner is **multipale client** reverse shell created by Ayoub Ouakkaha, which is now under development
 
 ## How to use it
 once you download the project(click )
