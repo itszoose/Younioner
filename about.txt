@@ -1,4 +1,13 @@
-this project has been  created by Ayoub Ouakkaha. 
+     
+\ \ / /__  _   _ _ __ (_) ___  _ __   ___|  _ \  
+ \ V / _ \| | | | '_ \| |/ _ \| '_ \ / _ \ |_) | 
+  | | (_) | |_| | | | | | (_) | | | |  __/  _ <  
+  |_|\___/ \__,_|_| |_|_|\___/|_| |_|\___|_| \_\ 
+
+
+Younioner Version 1.1 - created by Ayoub Ouakkaha. 
+the ide behind the project is to make a simple tool let you take controle over your devices.
+
 
 please help us to develope the next version of Younioner 1.2
 for more contact me on :
