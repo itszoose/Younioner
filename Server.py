@@ -34,10 +34,10 @@ class Server:
                    "  | | (_) | |_| | | | | | (_) | | | |  __/  _ <  \n" \
                    "  |_|\___/ \__,_|_| |_|_|\___/|_| |_|\___|_| \_\ \n"
 
-
-            print('\nW.E.L.C.O.M.E  TO  Y.O.U.N.I.O.N.E.R V.1.1 [P:{}]'.format(self.port))
+            print("\n\tWelcome to Younioner V1.1")
             print(logo)
-            print('\tcontact on ayoub.ouakkaha@gmail.com for more')
+            print('Created by Ayoub Ouakkaha, please visit our website www.ouakkaha.com')
+            print('\ncontact us at contact@ouakkaha.com, type help to display available commands.')
 
             # listen for one connection :)
             self.s.listen(self.max_client)
@@ -76,6 +76,8 @@ class Server:
             if cmd.strip() == 'list':
                 self.list_connections()
                 continue
+            elif cmd.strip() == "help":
+                self.displayHelp()
 
             elif cmd_stripped.startswith("select"):  # check command start with `select` word
                 conn = self.get_target(cmd)
@@ -87,6 +89,19 @@ class Server:
             else:
                 print("{} Command not recognized..".format(cmd))
 
+    # Display the help menu
+    def displayHelp(self):
+        """Display The help menu"""
+        help = "\nthis section will help to understand the basic commands: " \
+            "\n\nlist............ It will list availabel connection..Usage(just type : `list`)"\
+            "\n\nselect.......... used to select a connection to target.. the target number needs be availabel on list section Usage(select 1) or change the number 1 to the target ID"\
+            "\n\nquit............ used to close the current connection .. or if you don't have one it will close the script"\
+            "\n\nhelp............ as you might guess, it will print the help Menu, which you're looking to now.:)"\
+            "\n\nend-of-session.. this is really advance command..this command will delet your trace from the target command, for example it will delet the current running script on the target command which is(Client) "\
+            "\n\nIf you liked Our app and you want to help us for providing more and more.. please contact us at contact@ouakkaha.com or visit my site www.ouakkaha.com\nanyway thanks for using my app, be sure to have a greate day :)"
+
+
+        print(help)
     # Exit Reverse Shell
     def exit(self):
         for c in self.all_connection:
